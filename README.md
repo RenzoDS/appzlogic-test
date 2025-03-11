@@ -37,9 +37,23 @@ npm start
 \`\`\`bash
 cd backend
 python -m pytest
+python -m pytest --cov=app --cov-report=term-missing
 \`\`\`
 
 \`\`\`bash
 cd frontend
 npm test
+\`\`\`
+
+### Extra swagger
+
+Swagger UI:  
+\`\`\`bash
+[http://localhost:8000/docs](http://localhost:8000/docs)
+\`\`\`
+
+### Docker compose
+
+\`\`\`bash
+docker-compose up --build
 \`\`\`
